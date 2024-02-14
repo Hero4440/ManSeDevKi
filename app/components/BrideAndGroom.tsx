@@ -13,7 +13,7 @@ const BrideAndGroom = () => {
           <div className="flex flex-col items-center py-14 sm:px-8 lg:p-20 text-center">
             <img
               src={bride}
-              alt="pengantin perempuan"
+              alt="bride"
               className="w-48 h-48 rounded-full mb-8"
             />
             <h3 className="text-5xl font-medium font-head mb-4 text-gray-800">
@@ -35,7 +35,7 @@ const BrideAndGroom = () => {
             <div className="flex flex-col items-center">
               <img
                 src={groom}
-                alt="pengantin laki-laki"
+                alt="groom img"
                 className="w-48 h-48 rounded-full mb-8"
               />
               <h3 className="text-5xl font-medium font-head mb-4 text-gray-800">

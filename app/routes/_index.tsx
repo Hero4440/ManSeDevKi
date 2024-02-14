@@ -19,11 +19,10 @@ import GalleryPhotos from "~/components/GalleryPhotos";
 export const meta: V2_MetaFunction = () => {
   return [
     {
-      title: "Undangan Pernikahan - Ami & Fauzi",
+      title: "the Cutest Wedding of Deven & Manasi",
     },
     {
-      description:
-        "Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu",
+      description: "The Park, Visakhapatnam",
     },
     {
       "og:image": ogimage,
@@ -32,20 +31,19 @@ export const meta: V2_MetaFunction = () => {
       "og:image:type": "image/jpeg",
     },
     {
-      "og:site_name": "amifauzi",
+      "og:site_name": "ManSeDevKi",
     },
     { "og:url": "https://www.amifauzi.com/" },
-    { "og:title": "Undangan Pernikahan - Ami & Fauzi" },
+    { "og:title": "Ready for the Cutest Wedding of Deven & Manasi" },
     {
-      "og:description": `Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu`,
+      "og:description": `The Park, Visakhapatnam`,
     },
     { "og:type": "website" },
 
     { "twitter:image": ogimage },
     { "twitter:card": "summary_large_image" },
     {
-      "twitter:description":
-        "Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu",
+      "twitter:description": "The Park, Visakhapatnam",
     },
   ];
 };
