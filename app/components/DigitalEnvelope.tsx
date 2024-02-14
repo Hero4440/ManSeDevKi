@@ -4,22 +4,22 @@ const DigitalEnvelope = () => {
   return (
     <div className="w-full px-1 md:px-4">
       <h4 className="text-3xl font-head font-bold text-center mb-14 pt-10 text-gray-700">
-        Amplop Digital
+        Contact us on
       </h4>
 
       <div className=" flex justify-evenly flex-col md:flex-row md:flex-wrap">
         <div className="px-4 mb-10">
           <DebitCard
-            bank="BCA"
-            accountNumber="7401557702"
-            name="Rossiani Hutami"
+            bank="With love"
+            accountNumber="9741993641"
+            name="Manasi Susarla"
           />
         </div>
         <div className="px-4 mb-10">
           <DebitCard
-            bank="BCA"
-            accountNumber="1450055294"
-            name="Fauzi Al Aziz"
+            bank="With love"
+            accountNumber="7387533399"
+            name="Deven Shah"
           />
         </div>
       </div>
@@ -79,11 +79,10 @@ const DebitCard = ({ bank, accountNumber, name }: DebitCardProps) => {
                 display: isHover ? "block" : "none",
               }}
             >
-              {isCopied ? "BERHASIL DISALIN" : "SALIN"}
+              {isCopied ? "Copied" : "Copy"}
             </div>
           </div>
         </div>
-        <div className="mb-0.5 font-medium">Atas Nama</div>
         <div className="text-lg md:text-xl font-semibold">{name}</div>
       </div>
     </div>

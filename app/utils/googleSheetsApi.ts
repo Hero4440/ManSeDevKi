@@ -93,7 +93,7 @@ export interface MessageItemType {
 export const getMessage = async () => {
   try {
     const sheets = await getSheets();
-    const range = `Sheet2!A:D`;
+    const range = `Sheet1!A2:A4`;
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.SHEET_ID,

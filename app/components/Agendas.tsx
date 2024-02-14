@@ -8,38 +8,51 @@ dates=20220730T010000Z%2F20220730T080000Z`;
 const Agendas = () => {
   return (
     <div className="max-w-3xl mx-auto text-center">
-      <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
-        Pernikahan kami akan dilaksanakan pada:
-      </div>
       <h3 className="text-3xl md:text-4xl font-black mb-6 text-cente text-gray-700 font-sans">
-        SABTU, 30 JULI 2022
+        Event details
       </h3>
-      <div className="px-12 flex max-w-md mx-auto mb-10">
-        <a
-          href={CALENDAR_URL}
-          target={"_blank"}
-          className="px-8 py-4 transition-all text-lg font-semibold w-full rounded-lg bg-contrast hover:bg-contrast-2 outline-contrast-3 text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
-          rel="noreferrer"
-        >
-          Simpan di Kalender
-        </a>
+      <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
+        28 Feb 2024 - 1 Mar 2024
       </div>
-
-      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl font-black">
+      <div className="grid grid-cols-2 gap-2 text-center text-1xl px-1 py-1 md:py-4 md:px-0 md:text-2xl font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
-          AKAD NIKAH
+          Ganesh and Haldi
         </div>
         <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
-          08.00 WIB
+          03.00 PM, 28th Feb
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl  font-black">
+      <div className="grid grid-cols-2 gap-2 text-center text-1xl px-1 py-1 md:py-4 md:px-0 md:text-2xl font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
-          RESEPSI
+          Sangeet
         </div>
         <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
-          11.00 WIB
+          8:00 PM, 28th Feb
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-2 text-center text-1xl px-1 py-1 md:py-4 md:px-0 md:text-2xl font-black">
+        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
+          Baarat
+        </div>
+        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
+          4:00 PM, 29th Feb
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-2 text-center text-1xl px-1 py-1 md:py-4 md:px-0 md:text-2xl font-black">
+        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
+          Reception dinner
+        </div>
+        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
+          8:00 PM, 29th Feb
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-2 text-center text-1xl px-1 py-1 md:py-4 md:px-0 md:text-2xl font-black">
+        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
+          Muhurtham
+        </div>
+        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
+          2:54 AM, 1st Mar
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const BrideAndGroom = () => {
   return (
     <div className="pt-20 pb-4">
       <h3 className="text-3xl text-center font-sans font-bold text-gray-700 mb-6">
-        Kami yang Berbahagia
+        Celebrate love with us!
       </h3>
       <div className="w-full flex flex-wrap pb-20">
         <div className="w-full md:w-1/2 px-4">
@@ -17,15 +17,15 @@ const BrideAndGroom = () => {
               className="w-48 h-48 rounded-full mb-8"
             />
             <h3 className="text-5xl font-medium font-head mb-4 text-gray-800">
-              Rossiani Hutami
+              Manasi Susarla
             </h3>
             <div className="mb-4">
-              <TextWithLine>Pengantin Perempuan</TextWithLine>
+              <TextWithLine>The Bride 💃</TextWithLine>
             </div>
             <p className="font-sans text-gray-500 leading-6">
-              Lahir pada 31 Februari 1999 di Curup, Bengkulu. Putri Bungsu dari{" "}
-              <strong>Bapak Edward Newgate (Alm.)</strong> dan{" "}
-              <strong>Ibu Ross Newgate</strong>.
+              Born on April 24, 1997. The only daughter of{" "}
+              <strong>Mr. Ramana Susarla</strong> and{" "}
+              <strong>Mrs. Subbalakshmi Susarla</strong>.
             </p>
           </div>
         </div>
@@ -39,17 +39,15 @@ const BrideAndGroom = () => {
                 className="w-48 h-48 rounded-full mb-8"
               />
               <h3 className="text-5xl font-medium font-head mb-4 text-gray-800">
-                Fauzi Al Aziz
+                Deven Shah
               </h3>
-            </div>
-            <div className="flex flex-col items-center">
               <div className="mb-4">
-                <TextWithLine>Pengantin Laki-laki</TextWithLine>
+                <TextWithLine>The Groom 🏄‍♀️</TextWithLine>
               </div>
               <p className="font-sans text-gray-500 leading-6">
-                Lahir pada 90 Desember 2145 di Ciamis, Jawa Barat. Putra Sulung
-                dari <strong>Bapak Gol D. Roger</strong> dan{" "}
-                <strong>Ibu Portgas D. Rouge</strong>.
+                Born on June 27, 1997. The elder son of{" "}
+                <strong>Mr. Rajendra Shah</strong> and{" "}
+                <strong>Mrs. Rashmi Shah</strong>.
               </p>
             </div>
           </div>

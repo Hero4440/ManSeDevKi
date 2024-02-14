@@ -1,12 +1,11 @@
 import SectionWrapper from "./Utils/SectionWrapper";
-
 const MAP_EMBEDED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.4787825103076!2d102.53632071475825!3d-3.4758579974702015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e313b7d4f32df4f%3A0xfed4cd3d1030fa70!2sTaman%20Mini%20Perumnas%20Batu%20Galing!5e0!3m2!1sen!2sid!4v1650742704168!5m2!1sen!2sid";
+  "https://maps.google.com/maps?q=The+Park%2C+Visakhapatnam%2C+Dr+NTR+Beach+Rd%2C+Lawsons+Bay+Colony%2C+Pedda+Waltair%2C+Visakhapatnam%2C+Andhra+Pradesh+530023&t=&z=13&ie=UTF8&iwloc=&output=embed";
 const MAP_REDIRECT_URL =
-  "https://www.google.com/maps/dir//Taman+Mini+Perumnas+Batu+Galing,+Jl.+Batu+Galing+No.60,+Talang+Rimbo+Lama,+Curup+Tengah,+Rejang+Lebong+Regency,+Bengkulu+39119/@-3.4758526,102.5363207,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2e313b7d4f32df4f:0xfed4cd3d1030fa70!2m2!1d102.5385094!2d-3.475858!3e0";
-const MAP_TITLE = "Taman Mini Perumnas Batu Galing";
+  "https://www.google.com/maps/place/The+Park,+Visakhapatnam/@17.7214832,83.3313939,17z/data=!4m22!1m12!4m11!1m3!2m2!1d83.336136!2d17.7216723!1m6!1m2!1s0x3a39449ff005cfed:0xcea4e5d71e955b93!2sThe+Park,+Visakhapatnam,+Dr+NTR+Beach+Rd,+Lawsons+Bay+Colony,+Pedda+Waltair,+Visakhapatnam,+Andhra+Pradesh+530023!2m2!1d83.3361575!2d17.7214832!3m8!1s0x3a39449ff005cfed:0xcea4e5d71e955b93!5m2!4m1!1i2!8m2!3d17.7214832!4d83.3361575!16s%2Fg%2F11bbth6p79?entry=ttu";
+const MAP_TITLE = "The Park";
 const MAP_ADDRESS =
-  "Jl. Batu Galing No.60, Talang Rimbo Lama, Kec. Curup Tengah, Kabupaten Rejang Lebong, Bengkulu 39119";
+  "Dr NTR Beach Rd, Lawsons Bay Colony, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530023";
 
 const LocationMap = () => {
   return (
@@ -32,7 +31,7 @@ const LocationMap = () => {
           <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
             <div className="sticky top-8 text-center md:text-left">
               <h3 className="text-3xl font-head font-bold mb-3 text-gray-700">
-                Lokasi Pernikahan
+                Wedding Location
               </h3>
               <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
                 {MAP_TITLE}
@@ -45,7 +44,7 @@ const LocationMap = () => {
                   className="px-5 py-2 transition-all text-lg font-semibold rounded-md bg-contrast hover:bg-contrast-2 outline-contrast-3 text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
                   rel="noreferrer"
                 >
-                  Buka Map
+                  Open maps
                 </a>
               </div>
             </div>

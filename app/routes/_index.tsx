@@ -1,7 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { useEffect, useState } from "react";
-import WelcomeModal from "~/components/WelcomeModal";
 import { indexAction, indexLoader } from "~/controls";
 import type { LoaderDataType } from "~/controls";
 import { useMediaQuery } from "react-responsive";
@@ -12,8 +11,6 @@ import BrideAndGroom from "~/components/BrideAndGroom";
 import Countdown from "~/components/Countdown";
 import Agendas from "~/components/Agendas";
 import LocationMap from "~/components/LocationMap";
-import Message from "~/components/Message";
-import { GoogleOAuthProvider } from "@react-oauth/google";
 import DigitalEnvelope from "~/components/DigitalEnvelope";
 import MusicPlayer from "~/components/MusicPlayer";
 import ogimage from "~/images/ogimage.jpg";
@@ -60,31 +57,28 @@ export default function Index() {
   const { ENV } = useLoaderData<LoaderDataType>();
   const isSmallScreen = useMediaQuery({ query: `(max-width: 768px)` });
 
-  const [openWelcome, setOpenWelcome] = useState(true);
+  const [openWelcome, setOpenWelcome] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
-
-  const onCloseWelcomeModal = () => {
-    setOpenWelcome(false);
     document.body.style.overflow = "auto";
     window.scrollTo({ top: 0 });
-  };
+  }, []);
+
+  // const onCloseWelcomeModal = () => {
+  //   setOpenWelcome(false);
+  // };
 
   useEffect(() => {
     setIsMobile(isSmallScreen);
   }, [isSmallScreen]);
-
-  const thisYear = new Date().getFullYear();
 
   return (
     <div
       style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
       className="bg-background-2"
     >
-      <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} />
+      {/* <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} /> */}
 
       <div
         className="flex justify-center items-center h-screen md:h-[750px] bg-no-repeat bg-center bg-cover"
@@ -95,13 +89,13 @@ export default function Index() {
             className="text-center font-head font-bold text-5xl mb-4 text-[#EFEFEF]"
             style={{ textShadow: "3px 3px 1px #CE7BB0" }}
           >
-            Ami & Fauzi
+            Deven & Manasi
           </h4>
           <div
             className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
             style={{ textShadow: "2px 2px 1px #CE7BB0" }}
           >
-            30.07.2022
+            29.02.2024
           </div>
         </div>
       </div>
@@ -126,18 +120,12 @@ export default function Index() {
         <GalleryPhotos />
       </SectionWrapper>
 
-      <GoogleOAuthProvider clientId={ENV.GOOGLE_CLIENT_ID!}>
-        <SectionWrapper className="mb-36">
-          <Message isMobile={isMobile} />
-        </SectionWrapper>
-      </GoogleOAuthProvider>
-
       <SectionWrapper className="mb-36">
         <DigitalEnvelope />
       </SectionWrapper>
 
       <div className="py-24 bg-background text-gray-700 relative text-center font-sans">
-        © {thisYear} by <span className="font-semibold">Fauzi</span>
+        Made with ❤ by <span className="font-semibold">Hero and Devd</span>
       </div>
 
       <MusicPlayer play={!openWelcome} />

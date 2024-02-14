@@ -1,8 +1,7 @@
 import { memo, useEffect, useState } from "react";
-
-const EVENT_DATE = "Juliy 30, 2022 08:00:00";
+import qrCode from "../images/ManSeDevKi.svg";
+const EVENT_DATE = "Mar 1, 2024 02:54:00";
 const COUNTDOWN_DATE = new Date(EVENT_DATE).getTime();
-
 interface COUNTDOWNTYPE {
   days: number;
   hours: number;
@@ -43,17 +42,44 @@ const Countdown = memo(() => {
   }, []);
 
   return (
-    <div className="w-full px-1 md:px-4">
+    <div className="w-full px-1 md:px-2">
       <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4 className="mb-1">Hitung Mundur</h4>
-        <h4>Menuju Pernikahan Kami</h4>
+        <h4 className="mb-1">🎇 Countdown </h4>
+        <h4>to our big day! 🎇</h4>
       </div>
 
       <div className="flex justify-center pb-20">
-        <NumberCard number={countdown.days} label="Hari" />
-        <NumberCard number={countdown.hours} label="Jam" />
-        <NumberCard number={countdown.minutes} label="Menit" />
-        <NumberCard number={countdown.seconds} label="Detik" />
+        <NumberCard number={countdown.days} label="Days" />
+        <NumberCard number={countdown.hours} label="Hours" />
+        <NumberCard number={countdown.minutes} label="Minutes" />
+        <NumberCard number={countdown.seconds} label="Seconds" />
+      </div>
+
+      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+        Please Share your best captured moments with us 📸
+      </div>
+      <div
+        style={{
+          padding: "0 5px 2px 5px",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://drive.google.com/drive/u/0/folders/1MZ9AaCAbY-Ryv12H5aK-quFCPX6Jo-oG"
+          style={{
+            transition: "all",
+            borderRadius: "0.5rem",
+            background: "#2d2d2d",
+            cursor: "pointer",
+            width: "35%",
+            height: "auto",
+            aspectRatio: "1/1",
+          }}
+        >
+          <img src={qrCode} alt="QR code" />
+        </a>
       </div>
     </div>
   );
