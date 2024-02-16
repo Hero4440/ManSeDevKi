@@ -77,7 +77,6 @@ export default function Index() {
       className="bg-background-2"
     >
       {/* <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} /> */}
-
       <div
         className="flex justify-center items-center h-screen md:h-[750px] bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${isMobile ? heroBgMobile : heroBg})` }}
@@ -129,7 +128,7 @@ export default function Index() {
       </SectionWrapper>
 
       <div className="py-24 bg-background text-gray-700 relative text-center font-sans">
-        Made with ❤ by <span className="font-semibold">Hero and Devd</span>
+        Made with ❤ by <span className="font-semibold">Hero and Devd </span>
       </div>
 
       <MusicPlayer play={!openWelcome} />
