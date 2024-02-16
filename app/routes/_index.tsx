@@ -19,7 +19,7 @@ import GalleryPhotos from "~/components/GalleryPhotos";
 export const meta: V2_MetaFunction = () => {
   return [
     {
-      title: "the Cutest Wedding of Deven & Manasi",
+      title: "The Cutest Wedding of Deven & Manasi",
     },
     {
       description: "The Park, Visakhapatnam",
@@ -34,7 +34,7 @@ export const meta: V2_MetaFunction = () => {
       "og:site_name": "ManSeDevKi",
     },
     { "og:url": "https://www.amifauzi.com/" },
-    { "og:title": "Ready for the Cutest Wedding of Deven & Manasi" },
+    { "og:title": "Ready for The Cutest Wedding of Deven & Manasi" },
     {
       "og:description": `The Park, Visakhapatnam`,
     },
@@ -89,6 +89,12 @@ export default function Index() {
           >
             Deven & Manasi
           </h4>
+          <h5
+            className="text-center font-head font-bold text-2xl mb-4 text-[#EFEFEF]"
+            style={{ textShadow: "1px 1px 0.5px #CE7BB0" }}
+          >
+            <i># ManSeDevKi</i>
+          </h5>
           <div
             className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
             style={{ textShadow: "2px 2px 1px #CE7BB0" }}
