@@ -39,13 +39,12 @@ const Agendas = ({ events }) => {
               </div>
             </div>
             {expandedEvent === index && (
-              <div className="mt-2 text-lg text-justify text-gray-700 font-serif flex items-center">
+              <div className="mt-2 text-lg text-justify text-gray-700 font-serif md:flex items-center">
                 {event.photo && (
                   <img
                     src={event.photo}
                     alt={`Event ${index + 1}`}
-                    className="mt-4 mr-4 flex-shrink-0"
-                    style={{ width: "200px", height: "250px" }}
+                    className="mt-4 mr-4 md:flex-shrink-0 md:w-200 md:h-250"
                   />
                 )}
                 <div>{event.description}</div>
