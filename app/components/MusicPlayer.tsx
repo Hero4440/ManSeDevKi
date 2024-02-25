@@ -5,7 +5,7 @@ interface MusicPlayerProps {
 }
 
 const MusicPlayer = ({ play: playParent }: MusicPlayerProps) => {
-  const [play, setPlay] = useState(true);
+  const [play, setPlay] = useState(false);
   const audio = useRef<HTMLAudioElement>(null);
 
   const onPlay = async () => {
