@@ -8,6 +8,7 @@ import foto6 from "~/images/foto6.jpg";
 import foto7 from "~/images/foto7.jpg";
 import foto8 from "~/images/foto8.jpg";
 import foto9 from "~/images/foto9.jpg";
+import weddingvideo from "~/images/weddingvideo.mp4";
 import Gallery from "./Gallery";
 import type { IPhoto } from "./Gallery";
 

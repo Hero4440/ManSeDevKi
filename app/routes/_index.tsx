@@ -40,7 +40,7 @@ export const meta: V2_MetaFunction = () => {
       "og:image:type": "image/jpeg",
     },
     {
-      "og:site_name": "ManSeDevKi",
+      "og:site_name": "MannSeDevKi",
     },
     { "og:url": "https://www.amifauzi.com/" },
     { "og:title": "Ready for The Cutest Wedding of Deven & Manasi" },
@@ -176,7 +176,7 @@ export default function Index() {
             className="text-center font-head font-bold text-2xl mb-4 text-[#EFEFEF]"
             style={{ textShadow: "1px 1px 0.5px #CE7BB0" }}
           >
-            <i># ManSeDevKi</i>
+            <i># MannSeDevKi</i>
           </h5>
           <div
             className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"

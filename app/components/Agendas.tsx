@@ -18,8 +18,31 @@ const Agendas = ({ events }) => {
         Event details
       </h3>
       <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
-        28 Feb 2024 - 1 Mar 2024
+        26 Feb 2024 - 1 Mar 2024
       </div>
+      <p className="font-sans text-gray-500 leading-6">
+        <strong>#MannSeDevKi</strong>
+      </p>
+      <p className="font-sans text-gray-500 leading-6">
+        For as long as we remember, weddings were mostly about food and gifts.
+        We had never actually wondered about what a traditional Hindu wedding
+        entails until the time came for our own. And when it came to our own -
+        it turns out, that this is a #DeSi wedding with a TWIST! This is mostly
+        because we belong to two different communities within India:
+        Telugu-Brahmin & Marathi-Gujarati-Jain. With so many people asking us
+        about event details and their significance, we thought it would be nice
+        to capture a description of all the proceedings and moments leading up
+        to and comprising our #DeSi wedding! The list below would not just serve
+        as a note outlining the cultural significance of events but also as a
+        detailed itinerary for you to plan your travel, attendance, outfits etc,
+        accordingly.
+      </p>
+      <p className="font-sans text-gray-500 leading-6">
+        The list below would not just serve as a note outlining the cultural
+        significance of events but also as a detailed itinerary for you to plan
+        your travel, attendance, outfits etc, accordingly.
+      </p>
+      <br />
       <div className="max-w-4xl mx-auto text-center px-4 md:px-0">
         {events.map((event, index) => (
           <div key={index} className="mb-6">
