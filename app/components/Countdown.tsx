@@ -34,10 +34,10 @@ const Countdown = memo(() => {
 
       setCountdown({ days, hours, minutes, seconds });
 
-      if (delta < 0) {
-        clearInterval(interval);
-        setCountdown(countdownBase);
-      }
+      // if (delta < 0) {
+      //   clearInterval(interval);
+      //   setCountdown(countdownBase);
+      // }
     }, 1000);
   }, []);
 
