@@ -23,7 +23,7 @@ const Countdown = memo(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime();
 
-      const delta = COUNTDOWN_DATE - now;
+      const delta = now - COUNTDOWN_DATE;
 
       const days = Math.floor(delta / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
